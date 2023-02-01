@@ -1,0 +1,183 @@
+/* ========== MAIN ========== */
+body {
+  margin: 0;
+  padding: 0;
+  background: repeating-linear-gradient(transparent, transparent 20px, rgba(0, 0, 0, 0.05) 22px),
+    repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(0, 0, 0, 0.05) 22px);
+  font-family: Arial;
+}
+
+hr {
+  margin: 50px 0;
+  height: 30px;
+  background: repeating-linear-gradient(-45deg, rgb(204, 204, 204), rgb(128, 128, 128) 10px);
+  border: none;
+  box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.main-header {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-header h1 {
+  opacity: 0.8;
+  font-size: 32px;
+}
+.main-header-label {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #66ccff;
+  border-radius: 50px;
+  color: white;
+
+  margin-right: 10px;
+}
+.main-wrap {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 30px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: white;
+}
+
+/* ========== PROJECT 1 ========== */
+
+/* ========== PROJECT 2 ========== */
+#p2 #to-do-list {
+  width: 400px;
+  background: #2e3d49;
+  padding: 10px 20px;
+}
+#p2 .title {
+  color: #fff;
+}
+#p2 .underline {
+  text-decoration: underline;
+}
+#p2 .list {
+  list-style-type: circle;
+  text-align: left;
+  font-size: 16px;
+  color: #1fba58;
+  line-height: 24px;
+}
+#p2 .finished {
+  color: #f4442f;
+  text-decoration: line-through;
+}
+
+/* ========== PROJECT 3 ========== */
+#p3 .card {
+  height: 475px;
+  width: 325px;
+  box-shadow: 0px 5px 15px 0px rgba(153, 153, 153, 0.5);
+  border-radius: 4px;
+}
+#p3 .top {
+  height: 55%;
+  border-radius: 4px 4px 0px 0px;
+  border: 1px solid #ddd;
+  padding: 0px 16px;
+  background-image: url(profile-placeholder.svg);
+}
+#p3 .name {
+  padding-top: calc(475px * 0.4);
+  margin: 0px;
+}
+#p3 .status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+
+  border-radius: 5px;
+  background-color: #60d156;
+}
+#p3 .title {
+  margin-top: 8px;
+}
+#p3 .middle {
+  height: 5%;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 0px 16px;
+}
+#p3 .time {
+  color: #444;
+  font-size: 0.8em;
+  padding-top: 0.2em;
+}
+#p3 .bottom {
+  height: 40%;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+}
+#p3 .profile-action {
+  display: block;
+  width: 100%;
+  height: 32px;
+
+  font-family: inherit;
+  font-size: 1em;
+  text-align: left;
+
+  border-radius: 4px;
+  border: 0px;
+  background-color: white;
+
+  cursor: pointer;
+}
+#p3 .profile-action:hover {
+  background-color: #00a5d2;
+  color: white;
+}
+
+/* ========== PROJECT 4 ========== */
+#p4 header {
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  color: #697681;
+
+  background: white;
+  height: 85px;
+  padding: 15px;
+}
+#p4 section {
+  padding: 16px;
+}
+#p4 .flex-container {
+  display: flex;
+}
+#p4 .space-between {
+  justify-content: space-between;
+}
+#p4 .vertical-centerer {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+#p4 .header-content {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#p4 .logo {
+  width: 200px;
+  display: inline-block;
+  margin: 10px 0px;
+}
+#p4 .menu {
+  list-style: none;
+  list-style-type: none;
+}
+#p4 .menu > li {
+  display: inline;
+  margin-left: 37.5px;
+}
