@@ -1,0 +1,245 @@
+/* ========== MAIN ========== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: repeating-linear-gradient(transparent, transparent 20px, rgba(0, 0, 0, 0.05) 22px),
+    repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(0, 0, 0, 0.05) 22px);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  margin: 50px 0;
+  height: 30px;
+  background: repeating-linear-gradient(-45deg, rgb(204, 204, 204), rgb(128, 128, 128) 10px);
+  border: none;
+  box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.main-header {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-header h1 {
+  opacity: 0.8;
+  font-size: 32px;
+}
+.main-header-label {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #66ccff;
+  border-radius: 50px;
+  color: white;
+
+  margin-right: 10px;
+}
+.main-wrap {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 30px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: white;
+}
+
+/* ========== PROJECT 1 ========== */
+#p1 .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#p1 .title div {
+  margin: 0 auto;
+  margin-top: -50px;
+  width: fit-content;
+  font-size: 120px;
+  background-image: url(https://traveltimes.ru/wp-content/uploads/2022/08/1652226824_16-kartinkin-net-p-krasivie-kartinki-yaponii-18.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#p1 .card {
+  display: flex;
+}
+#p1 .card + .card {
+  margin-top: 60px;
+}
+#p1 .card.reverse .card-img {
+  order: 1;
+}
+#p1 .card.reverse .card-content {
+  text-align: right;
+  margin-left: 0px;
+  margin-right: 30px;
+}
+#p1 .card.reverse .card-title {
+  padding: 10px 20px 10px 0px;
+  border-left: none;
+  border-right: 5px solid #536814;
+}
+#p1 .card.reverse .card-text {
+  width: 50%;
+  margin-left: auto;
+}
+
+#p1 .card-img {
+  width: 40%;
+  border-radius: 16px;
+}
+#p1 .card-content {
+  margin-left: 30px;
+}
+#p1 .card-title {
+  color: #536814;
+  padding: 10px 0px 10px 20px;
+  border-left: 5px solid #536814;
+}
+#p1 .card-text {
+  width: 50%;
+}
+
+#p1 .card:nth-child(3) .card-title {
+  color: #759ed8;
+  border-color: #759ed8;
+}
+#p1 .card:nth-child(4) .card-title {
+  color: #af7180;
+  border-color: #af7180;
+}
+#p1 .card:nth-child(5) .card-title {
+  color: #c72a7d;
+  border-color: #c72a7d;
+}
+
+/* ========== PROJECT 2 ========== */
+#p2 .title {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 60px;
+  text-align: center;
+  color: #fca84c;
+}
+#p2 .title::after {
+  content: '';
+  position: absolute;
+  left: 90%;
+  bottom: 65%;
+  width: 80px;
+  height: 80px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/526/526190.png);
+  background-size: contain;
+  transform: rotate(15deg);
+}
+
+#p2 .contents {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(247, 247, 247);
+}
+#p2 .contents li {
+  font-size: 18px;
+  color: #ff5f6d;
+}
+
+#p2 .recipe + .recipe {
+    margin-top: 80px;
+}
+#p2 .recipe h2 {
+  font-size: 32px;
+}
+#p2 .recipe-details {
+  list-style: none;
+  padding-left: 0;
+}
+#p2 .recipe-details li {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+#p2 .recipe-details img {
+  display: block;
+  width: 60px;
+  margin-right: 10px;
+}
+
+#p2 .recipe-products {
+  margin-top: 40px;
+  width: 500px;
+  padding: 10px;
+  border: 2px solid #fca84c;
+  border-radius: 8px;
+}
+#p2 .recipe-products tr {
+    border: 2px solid #fca84c;
+}
+
+#p2 .recipe-steps {
+    margin-top: 50px;
+}
+#p2 .recipe__step {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+}
+#p2 .recipe_step-num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #fca84c;
+    color: white;
+    font-size: 50px;
+}
+#p2 .recipe_step-num span:last-child {
+    font-size: 18px;
+}
+#p2 .recipe__step-img {
+    width: 400px;
+    margin-right: 15px;
+}
+#p2 .recipe__step-text {
+    width: 40%;
+    font-size: 20px;
+    opacity: .8;
+}
+#p2 .recipe-source {
+    margin-top: 40px;
+    font-size: 18px;
+}
+#p2 .recipe-source a {
+    margin-left: 10px;
+    text-decoration: underline;
+    color: #fca84c;
+}
+
+/* ========== PROJECT 3 ========== */
+#p3 h1 {
+    font-size: 60px;
+    color: ;
+}

@@ -1,12 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khan Academy [Lab - 1]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="p1">
+      <div class="main-header">
+        <h5 class="main-header-label">Project 1</h5>
+        <h1>Travel webpage</h1>
+      </div>
+      <div class="main-wrap">
+        <h1 class="title">
+          Travel to
+          <div>Japan</div>
+        </h1>
+
+        <div class="card">
+          <img
+            src="https://fullpicture.ru/wp-content/uploads/2016/06/amazingplacesjapan1.jpg"
+            alt=""
+            class="card-img"
+          />
+          <div class="card-content">
+            <h2 class="card-title">Sagano Bamboo Forest</h2>
+            <div class="card-text">
+              <p>
+                The bamboo forest of Sagano seems to move tourists to a completely different
+                reality. In addition to the fact that the tall bamboo stalks themselves look
+                impressive when the wind picks up, they also make sounds, “start to sing,” as the
+                locals say.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reverse">
+          <img
+            src="https://fullpicture.ru/wp-content/uploads/2016/06/amazingplacesjapan2.jpg"
+            alt=""
+            class="card-img"
+          />
+          <div class="card-content">
+            <h2 class="card-title">Hitachi Park</h2>
+            <div class="card-text">
+              <p>
+                Hitachi Park is located in the northeastern part of Tokyo Prefecture, but on the
+                island of Honshu. The best time to visit Hitachi Park is September, when 4.5 million
+                nemophiles (American forget-me-nots) bloom here, turning the ground into an amazing
+                blue blanket of flowers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://fullpicture.ru/wp-content/uploads/2016/06/amazingplacesjapan3.jpg"
+            alt=""
+            class="card-img"
+          />
+          <div class="card-content">
+            <h2 class="card-title">Japanese Garden Kawachi Fuji</h2>
+            <div class="card-text">
+              <p>
+                Japanese Garden Kawachi Fuji is located in the northern part of Kyushu, near
+                Fukuoka. It is best to visit this place at the end of April, at this time the garden
+                reaches its brightest and most lush flowering.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reverse">
+          <img
+            src="https://fullpicture.ru/wp-content/uploads/2016/06/amazingplacesjapan4.jpg"
+            alt=""
+            class="card-img"
+          />
+          <div class="card-content">
+            <h2 class="card-title">Shibazakura</h2>
+            <div class="card-text">
+              <p>
+                Shibazakura is a rare pink and white-purple moss that grows in the Fuji Five Lakes
+                area. Every year, from April to June, the Fuji Shibazakura Festival is held in honor
+                of this extraordinary phenomenon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="p2">
+      <div class="main-header">
+        <h5 class="main-header-label">Project 2</h5>
+        <h1>Recipe book</h1>
+      </div>
+      <div class="main-wrap">
+        <h1 class="title">My Recipe Book</h1>
+
+        <div class="contents">
+          <h2>Contents:</h2>
+          <ol>
+            <li>
+              <a href="#recipe1">Banana waffles</a>
+            </li>
+            <li>
+              <a href="#recip2">Cottage cheese pancakes</a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="recipe">
+          <h2>Banana waffles</h2>
+          <ul class="recipe-details">
+            <li class="recipe-time">
+              <img src="https://cdn-icons-png.flaticon.com/512/7887/7887075.png" alt="" />
+              <span>30 minutes</span>
+            </li>
+            <li class="recipe-portions">
+              <img src="https://cdn-icons-png.flaticon.com/512/6077/6077308.png" alt="" />
+              <span>4 servings</span>
+            </li>
+          </ul>
+
+          <table class="recipe-products">
+            <thead>
+              <tr>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bananas</td>
+                <td>1 pcs.</td>
+              </tr>
+              <tr>
+                <td>Chicken eggs</td>
+                <td>3 pcs.</td>
+              </tr>
+              <tr>
+                <td>Baking powder</td>
+                <td>5 g</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td>1 g</td>
+              </tr>
+              <tr>
+                <td>Sunflower oil</td>
+                <td>40 g</td>
+              </tr>
+              <tr>
+                <td>Flour</td>
+                <td>180 g</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="recipe-steps">
+            <div class="recipe__step">
+              <div class="recipe_step-num"><span>1</span><span>/4</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://e3.edimdoma.ru/data/recipe_steps/0068/9654/689654-ed4_thumb.jpg?1675154149"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>Blend the banana and eggs in a blender until smooth.</p>
+              </div>
+            </div>
+            <div class="recipe__step">
+              <div class="recipe_step-num">2<span>/4</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://e3.edimdoma.ru/data/recipe_steps/0068/9655/689655-ed4_thumb.jpg?1675154204"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>Pour in oil. Add salt, baking powder and flour. Mix everything well.</p>
+              </div>
+            </div>
+            <div class="recipe__step">
+              <div class="recipe_step-num">3<span>/4</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://e2.edimdoma.ru/data/recipe_steps/0068/9656/689656-ed4_thumb.jpg?1675154253"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>
+                  Bake in a waffle iron for 3-4 minutes. For each waffle, it took me 2 tbsp. l. It
+                  turned out 8 pieces.
+                </p>
+              </div>
+            </div>
+            <div class="recipe__step">
+              <div class="recipe_step-num">4<span>/4</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://e2.edimdoma.ru/data/recipe_steps/0068/9657/689657-ed4_thumb.jpg?1675154330"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>
+                  Waffles can be sprinkled with powdered sugar or pour condensed milk. And you can
+                  eat with savory fillings.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipe-source">
+            <em>Source:</em>
+            <a href="https://www.edimdoma.ru/retsepty/151292-bananovye-vafli">Edimdoma.ru</a>
+          </div>
+        </div>
+
+        <div class="recipe">
+          <h2>Cottage cheese pancakes</h2>
+          <ul class="recipe-details">
+            <li class="recipe-time">
+              <img src="https://cdn-icons-png.flaticon.com/512/7887/7887075.png" alt="" />
+              <span>30 minutes</span>
+            </li>
+            <li class="recipe-portions">
+              <img src="https://cdn-icons-png.flaticon.com/512/6077/6077308.png" alt="" />
+              <span>1 serving</span>
+            </li>
+          </ul>
+
+          <table class="recipe-products">
+            <thead>
+              <tr>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cottage cheese</td>
+                <td>350 g</td>
+              </tr>
+              <tr>
+                <td>Chicken eggs</td>
+                <td>2 pcs.</td>
+              </tr>
+              <tr>
+                <td>Wheat flour</td>
+                <td>6 tablespoons</td>
+              </tr>
+              <tr>
+                <td>Sugar</td>
+                <td>2 tablespoons</td>
+              </tr>
+              <tr>
+                <td>Sunflower oil</td>
+                <td>5 tablespoons</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="recipe-steps">
+            <div class="recipe__step">
+              <div class="recipe_step-num"><span>1</span><span>/6</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://eda.ru/img/eda/c434x295/s1.eda.ru/StaticContent/Photos/110811142241/170314165129/p_O.png"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>
+                  Put all the cottage cheese in a saucepan and mash it with a fork so that there are
+                  no large lumps left in it. Break eggs into it, add sugar and mix everything
+                  thoroughly. It is better not to use too dry or too wet cottage cheese, otherwise
+                  the cheesecakes will fall apart during the cooking process.
+                </p>
+              </div>
+            </div>
+            <div class="recipe__step">
+              <div class="recipe_step-num">2<span>/6</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://eda.ru/img/eda/c434x295/s1.eda.ru/StaticContent/Photos/110811142241/1703141651290/p_O.png"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>
+                  Pour 5 tablespoons (with a slide) of flour into the cottage cheese and mix
+                  thoroughly. You can add a little more flour, then the cheesecakes will turn out
+                  more dense. Or you can add a little less flour, and then the cheesecakes will be
+                  more tender. As a result, you should get a homogeneous mass, from which it will be
+                  possible to sculpt cheesecakes.
+                </p>
+              </div>
+            </div>
+            <div class="recipe__step">
+              <div class="recipe_step-num">3<span>/6</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://eda.ru/img/eda/c434x295/s1.eda.ru/StaticContent/Photos/110811142241/170314165130/p_O.png"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>Place a frying pan over medium heat and pour sunflower oil into it.</p>
+              </div>
+            </div>
+            <div class="recipe__step">
+              <div class="recipe_step-num">4<span>/6</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://eda.ru/img/eda/c434x295/s1.eda.ru/StaticContent/Photos/110811142241/1703141651300/p_O.png"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>
+                  Sprinkle some flour on a plate. Blind a few small balls from the resulting curd
+                  mass and put them on a plate. It is better to sculpt 4-5 balls at once - as much
+                  as will fit in the pan at the same time. Then, in turn, roll the curd balls in
+                  flour, flatten them into small cakes (they should not be too thin) and put them in
+                  the pan.
+                </p>
+              </div>
+            </div>
+            <div class="recipe__step">
+              <div class="recipe_step-num">5<span>/6</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://eda.ru/img/eda/c434x295/s1.eda.ru/StaticContent/Photos/110811142241/170314165131/p_O.png"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>
+                  Fry the cheesecakes for 1-2 minutes until golden brown. Then turn them over to the
+                  other side and also fry until golden.
+                </p>
+              </div>
+            </div>
+            <div class="recipe__step">
+              <div class="recipe_step-num">6<span>/6</span></div>
+              <img
+                class="recipe__step-img"
+                src="https://eda.ru/img/eda/c434x295/s1.eda.ru/StaticContent/Photos/110811142241/1703141651310/p_O.png"
+                alt=""
+              />
+              <div class="recipe__step-text">
+                <p>Repeat until curd runs out.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipe-source">
+            <em>Source:</em>
+            <a href="https://eda.ru/recepty/zavtraki/sirniki-iz-tvoroga-18506">Eda.ru</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="p3">
+      <div class="main-header">
+        <h5 class="main-header-label">Project 3</h5>
+        <h1>Blog</h1>
+      </div>
+      <div class="main-wrap">
+        <h1>My blog</h1>
+
+        <ul class="contents">
+          <li>
+            <a href="#post1">Hello world!</a>
+          </li>
+          <li>
+            <a href="#post1">Holidays in Miami</a>
+          </li>
+        </ul>
+
+        <div class="posts-wrap">
+            <div class="post">
+                <h2 class="post-title">Hello world!</h2>
+                <h5 class="post-time">12:30</h5>
+                <h5 class="post-date">added 2 days ago</h5>
+                <img src="https://vironit.com/wp-content/uploads/2019/07/python.png" alt="" class="post-img">
+                <div class="post-text">
+                    <p>Today I finally started learning python!</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2 class="post-title">Holidays in Miami</h2>
+                <h5 class="post-time">18:22</h5>
+                <h5 class="post-date">added 4 days ago</h5>
+                <img src="https://static.tildacdn.com/tild6362-6564-4339-b863-353339313364/scale_1200.jpg" alt="" class="post-img">
+                <div class="post-text">
+                    <p>"It's time to relax," I said to myself and flew to Miami to work 🙃</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
