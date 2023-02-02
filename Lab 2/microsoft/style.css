@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'MWF-FLUENT-ICONS';
+  src: url('./assets/MWFFluentIcons.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'MWF-MDL2';
+  src: url('./assets/mwfmdl2-v3.54.woff') format('woff');
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', SegoeUI, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  padding-bottom: 50px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  appearance: none;
+  background: none;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+section + section {
+  margin-top: 96px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-block,
+header ul {
+  display: flex;
+  font-size: 13px;
+}
+
+header ul {
+  column-gap: 8px;
+}
+
+header a,
+header button {
+  position: relative;
+  height: 52px;
+  padding: 0 8px;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav span {
+  position: relative;
+}
+
+header nav .nav-hover:hover span::before,
+header a.active span::before {
+  position: absolute;
+  content: '';
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+}
+
+.logo {
+  margin-right: 20px;
+}
+.logo img {
+  width: 108px;
+}
+
+.header-block:last-child button {
+  position: relative;
+  padding: 16px;
+}
+
+.products {
+  padding-right: 24px !important;
+}
+.products::after {
+  font-family: 'MWF-MDL2';
+  content: '';
+  position: absolute;
+  top: 30%;
+  right: 9px;
+  font-size: 10px;
+  display: inline-block;
+  color: currentColor;
+  font-weight: 700;
+  padding-top: 7px;
+}
+
+.search::after {
+  font-family: 'MWF-MDL2';
+  content: '';
+  -ms-high-contrast-adjust: none;
+  border: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 5px;
+  position: relative;
+  text-indent: 0;
+  vertical-align: sub;
+}
+
+.login span:last-child {
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' stroke='%23707070'%3E%3Cg class='mectrl_stroke' stroke-width='1.9' fill='none'%3E%3Ccircle cx='32' cy='32' r='30.25'/%3E%3Cg transform='matrix(1.1 0 0 1.1 8.8 5.61)'%3E%3Ccircle class='mectrl_stroke' cx='20' cy='16' r='7'/%3E%3Cpath class='mectrl_stroke' d='M30 35h10m-5-5v10M30.833 32.09A11 11 0 009 34'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero {
+  background-size: cover;
+  background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP5-1920x600);
+  height: 590px;
+}
+.hero .wrapper {
+  padding-left: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 2.3125rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.link-btn {
+  border-radius: 0.125rem;
+  padding: 0.725rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 500;
+  background-color: #0067b8;
+  color: white;
+}
+.link-btn:hover {
+  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 13%), 0 0 0.0625rem 0 rgb(0 0 0 / 11%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.link {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.6875em;
+
+  font-weight: 500;
+}
+.link::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 0.0625em);
+  margin-top: -0.5em;
+  right: 0.5em;
+  font-family: MWF-FLUENT-ICONS;
+  line-height: 1;
+  font-weight: 600;
+  transform: translate(0.25em, 0);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link:hover::after {
+  transform: translate(0.4em, 0);
+}
+
+.hero-btns {
+  display: flex;
+  column-gap: 25px;
+}
+
+.news .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+}
+.news__item {
+  width: 100%;
+  cursor: pointer;
+}
+.news__item h2 {
+  padding-top: 1rem;
+  font-size: 1.8125rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.news__item .link {
+  display: block;
+  width: fit-content;
+  margin-top: 15px;
+  color: #0067b8;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .wrapper {
+    width: 90%;
+  }
+  .hero {
+    height: 445px;
+  }
+}

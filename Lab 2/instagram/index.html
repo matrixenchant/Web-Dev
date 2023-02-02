@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="wrapper">
+        <div class="hero">
+          <img src="./assets/screenshot1.png" alt="" />
+          <img src="./assets/screenshot2.png" alt="" style="opacity: 0" />
+          <img src="./assets/screenshot3.png" alt="" style="opacity: 0" />
+          <img src="./assets/screenshot4.png" alt="" style="opacity: 0" />
+        </div>
+        <div class="auth">
+          <div class="form block">
+            <div class="logo"></div>
+            <form>
+              <div class="input-wrap">
+                <input type="text" name="username" required />
+                <div class="input-label">Телефон, имя пользователя или эл. адрес</div>
+              </div>
+              <div class="input-wrap">
+                <input type="password" name="password" required />
+                <div class="input-label">Пароль</div>
+              </div>
+              <label class="checkbox-wrap" for="remme">
+                <input type="checkbox" name="remme" id="remme" />
+                <div class="checkbox-box"></div>
+                <div class="checkbox-label">Сохранить данные входа</div>
+              </label>
+              <button class="form-submit">Войти</button>
+            </form>
+            <div class="separator">
+              <div></div>
+              <div>ИЛИ</div>
+              <div></div>
+            </div>
+            <a href="#" class="facebook-login">
+              <span class="facebook-icon"></span><span>Войти через Facebook</span>
+            </a>
+            <a href="#" class="reset-password">Забыли пароль?</a>
+          </div>
+          <div class="register block">
+            <span>У вас ещё нет аккаунта? <a href="#">Зарегистрироваться</a></span>
+          </div>
+          <div class="apps">
+            <div class="apps-label">Установите приложение.</div>
+            <div class="apps-wrap">
+              <a href="#google-play"
+                ><img src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" alt=""
+              /></a>
+              <a href="#microsoft-store"
+                ><img src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="links">
+        <a href="#">Meta</a>
+        <a href="#">Информация</a>
+        <a href="#">Блог</a>
+        <a href="#">Вакансии</a>
+        <a href="#">Помощь</a>
+        <a href="#">API</a>
+        <a href="#">Конфиденциальность</a>
+        <a href="#">Условия </a>
+        <a href="#">Популярные аккаунты</a>
+        <a href="#">Места </a>
+        <a href="#">Instagram Lite </a>
+        <a href="#">Загрузка контактов и лица, не являющиеся пользователями</a>
+      </div>
+      <div class="bottom">
+        <div class="lang">
+          <span>Русский</span>
+          <span class="lang-more"
+            ><svg
+              style="transform: rotate(180deg)"
+              fill="#8e8e8e"
+              height="12"
+              role="img"
+              viewBox="0 0 24 24"
+              width="12"
+            >
+              <path
+                d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z"
+              ></path></svg
+          ></span>
+        </div>
+        <div class="copyright">© 2023 Instagram from Meta</div>
+      </div>
+    </footer>
+
+    <script>
+      let active = 1;
+      setInterval(() => {
+        document.querySelectorAll('.hero img').forEach((x) => (x.style.opacity = 0));
+        document.querySelector(`.hero img:nth-child(${active})`).style.opacity = 1;
+        active++;
+        if (active > 4) active = 1;
+      }, 5500);
+    </script>
+  </body>
+</html>
