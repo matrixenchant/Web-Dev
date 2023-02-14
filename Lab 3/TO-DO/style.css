@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Style.css */
+
+body {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.6em;
+}
+
+header {
+  padding: 30px 0;
+}
+header .wrapper {
+  display: flex;
+  align-items: end;
+}
+header h4 {
+  margin-left: 5px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.icon {
+  transition: 0.4s ease;
+}
+
+input {
+  font-family: inherit;
+  width: 200px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+
+  transition: 0.4s ease;
+}
+.input:active,
+.input:focus {
+  caret-color: rgb(75, 91, 240);
+  border-color: rgb(75, 91, 240);
+  box-shadow: 0px 4px 15px rgba(75, 91, 240, 0.3);
+}
+.input:active + .icon,
+.input:focus + .icon {
+  color: rgb(75, 91, 240);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.toolbar-search {
+  position: relative;
+}
+.toolbar-search input {
+  padding-left: 30px;
+}
+.toolbar-search .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 1.5em;
+  transform: translateY(-50%);
+}
+
+.toolbar-add button {
+  width: 100%;
+  height: 40px;
+  font-size: 3em;
+  color: grey;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.toolbar-add button:hover {
+  color: rgb(75, 91, 240);
+}
+.toolbar-add button:active {
+  color: rgb(75, 91, 240);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+}
+
+.list {
+  margin-top: 30px;
+}
+
+.todo__item {
+  margin-top: 10px;
+  position: relative;
+  width: calc(100% - 40px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-icon,
+.btn-icon i {
+  transition: 0.4s ease;
+}
+.btn--delete:hover i {
+  color: rgb(216, 55, 55);
+}
+
+.todo__item-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.todo__item-input {
+  position: relative;
+  width: 90%;
+  margin-left: 10px;
+}
+.todo__item-input input {
+  width: 100%;
+  font-family: inherit;
+  resize: none;
+  padding: 0 5px 5px 5px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(75, 91, 240, 0);
+  caret-color: rgb(75, 91, 240);
+}
+.todo__item-input input:focus {
+  border-color: rgba(75, 91, 240, 0.5);
+}
+.todo__item-input::after {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  top: 35%;
+  left: 0;
+  color: transparent;
+  pointer-events: none;
+  content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+  text-decoration: underline;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 1.2px;
+  text-decoration-style: wavy;
+  text-decoration-color: black;
+  transition: 0.6s ease;
+}
+.todo__item-status {
+  font-size: 2em;
+  color: rgb(75, 91, 240);
+  cursor: pointer;
+}
+
+.todo__item--complete .todo__item-input input {
+  color: rgba(0, 0, 0, 0.5);
+}
+.todo__item--complete .todo__item-input::after {
+  animation: complete 1s ease 1 forwards;
+}
+@keyframes complete {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
