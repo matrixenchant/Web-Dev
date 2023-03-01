@@ -6,8 +6,19 @@
     </div>
   </div>
   <div class="products__item-main">
+    <div class="products__item-delete" (click)="deleteProduct()">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.6345 7.72189L17.7245 4.81189L12.6345 9.90189L7.54452 4.81189L4.63452 7.72189L9.72452 12.8119L4.63452 17.9019L7.54452 20.8119L12.6345 15.7219L17.7245 20.8119L20.6345 17.9019L15.5445 12.8119L20.6345 7.72189Z" fill="black"/>
+      </svg>        
+    </div>
     <div class="products__item-name">{{ product.name }}</div>
     <app-rating [rating]="product.rating" />
+    <div (click)="likeProduct()" class="products__item-likes">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.5 4C4.42 4 2 6.64323 2 10.0323C2 14.9677 9 21 12 21C15 21 22 14.9677 22 10.0323C22 6.64323 19.58 4 16.5 4C14.76 4 13.09 4.88839 12 6.28129C10.91 4.88839 9.24 4 7.5 4Z" stroke="#E33A44" stroke-linejoin="round"/>
+      </svg>
+      <span>{{ product.likes }}</span>
+    </div>
     <div class="products__item-description">
       <p>{{ product.description }}</p>
       <a [href]="product.url" target="_blank" class="btn products__item-link"

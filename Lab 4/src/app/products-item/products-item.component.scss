@@ -1,5 +1,6 @@
 :host {
   margin-top: 40px;
+  position: relative;
   display: block;
 }
 
@@ -13,6 +14,45 @@
   &-wrap {
     display: flex;
     column-gap: 20px;
+  }
+
+  &-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+    path {
+      fill: grey;
+      transition: 0.4s ease;
+    }
+    &:hover {
+      path {
+        fill: #E33A44;
+      }
+    }
+  }
+
+  &-likes {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+    svg {
+      margin-right: 5px;
+
+      path {
+        transition: 0.4s ease;
+      }
+      &:hover {
+        path {
+          fill: #E33A44;
+        }
+      }
+    }
   }
 
   &-gallery {

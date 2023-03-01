@@ -1,9 +1,7 @@
-
 <div class="wrapper">
-  <div class="nav">
-    <a routerLink="/products" routerLinkActive="active">Products</a>
-    <a href="/kaspi">Kaspi</a>
-  </div>
+  <header>Магазин</header>
+  <nav class="categories"></nav>
+  <app-products-list [categories]="categories" [products]="products"></app-products-list>
 </div>
 
 <router-outlet></router-outlet>

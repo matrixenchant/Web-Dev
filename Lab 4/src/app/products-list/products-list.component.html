@@ -1,0 +1,10 @@
+<div class="products-wrapper">
+  <div class="products-categories">
+    <div (click)="choiceCategory(category)" *ngFor="let category of categories" class="products-categories__item" [ngClass]="{'active': activeCategory === category}">{{ category }}</div>
+  </div>
+  <app-products-item
+    *ngFor="let product of filterProducts()"
+    [product]="product"
+    (deleteProductEmitter)="deleteProduct(product)"
+  ></app-products-item>
+</div>

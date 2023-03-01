@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-products-item',
@@ -9,6 +9,13 @@ export class ProductsItemComponent {
   @Input()
   product!: Product;
 
+  @Output()
+  deleteProductEmitter: EventEmitter<any> = new EventEmitter();
+
+  deleteProduct() {
+    this.deleteProductEmitter.emit();
+  }
+
   mainImg: number = 0;
 
   shareHandler(type: 'whatsapp' | 'telegram') {
@@ -18,5 +25,9 @@ export class ProductsItemComponent {
       window.open(
         `https://telegram.me/share/url?url=${this.product.url}&text=${this.product.name}`
       );
+  }
+
+  likeProduct() {
+    this.product.likes++
   }
 }

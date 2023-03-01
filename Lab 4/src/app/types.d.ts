@@ -1,8 +1,10 @@
 interface Product {
+  id: number;
   name: string;
-  type: 'monitor' | 'mouse' | 'keyboard' | 'gpu' | 'cpu'
+  type: 'all' | 'monitor' | 'mouse' | 'keyboard' | 'gpu' | 'cpu'
   images: string[];
   description: string;
   rating: number;
   url: string;
+  likes: number;
 }
