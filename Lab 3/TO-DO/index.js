@@ -1,6 +1,6 @@
 //
 
-const $ = (s) => document.querySelector(s)
+const $ = (s) => document.querySelector(s);
 
 const createHTML = (tag, options = {}) => {
   const el = document.createElement(tag);
@@ -11,7 +11,7 @@ const createHTML = (tag, options = {}) => {
     }
 
     if (key === 'onClick') {
-      el.addEventListener('click', options[key])
+      el.addEventListener('click', options[key]);
     }
 
     el[key] = options[key];
@@ -19,23 +19,13 @@ const createHTML = (tag, options = {}) => {
   return el;
 };
 
-const TODOCollection = function(array) {
-    this.children = array
-}
-TODOCollection.prototype.renderAll = function() {
-    this.children.forEach(x => x.render(false))
-}
-TODOCollection.prototype.add = function (todo) {
-
-}
-
 const TODO = function (title, status) {
   this.title = title;
   this.status = status;
 };
 TODO.prototype.delete = function () {
-  this.html.remove()
-}
+  this.html.remove();
+};
 TODO.prototype.render = function (rerender = true) {
   let iconClass = 'fa-regular fa-circle';
   if (this.status === 'complete') iconClass = 'fa-solid fa-circle-check';
@@ -54,12 +44,12 @@ TODO.prototype.render = function (rerender = true) {
               }),
             ],
             onClick: () => {
-              if (this.status === 'complete') this.status = 'idle'
-              else this.status = 'complete'
-              this.render()
-            }
+              if (this.status === 'complete') this.status = 'idle';
+              else this.status = 'complete';
+              this.render();
+            },
           }),
-          createHTML('div',{
+          createHTML('div', {
             className: 'todo__item-input',
             children: [
               createHTML('input', {
@@ -67,11 +57,11 @@ TODO.prototype.render = function (rerender = true) {
                 disabled: this.status === 'complete',
                 placeholder: 'New TODO',
                 onchange: (e) => {
-                  this.title = e.target.value
-                }
+                  this.title = e.target.value;
+                },
               }),
-            ]
-          })
+            ],
+          }),
         ],
       }),
       createHTML('button', {
@@ -82,33 +72,29 @@ TODO.prototype.render = function (rerender = true) {
           }),
         ],
         onClick: () => {
-          this.delete()
-        }
+          this.delete();
+        },
       }),
     ],
   });
 
-  const parent = document.querySelector('.list')
+  const parent = document.querySelector('.list');
   if (rerender) {
-    parent.insertBefore(div, this.html)
-    this.html.remove()
-  }
-  else {
+    parent.insertBefore(div, this.html);
+    this.html.remove();
+  } else {
     parent.appendChild(div);
   }
-  this.html = div
+  this.html = div;
 };
 TODO.prototype.focus = function () {
-  this.html.querySelector('input').focus()
-}
+  this.html.querySelector('input').focus();
+};
 
+// Render todos
 
-  // Render todos
-  
-  $('.toolbar-add').onclick = () => {
-    const todo = new TODO('', 'idle')
-    todo.render(false)
-    todo.focus()
-  }
-
-
+$('.toolbar-add').onclick = () => {
+  const todo = new TODO('', 'idle');
+  todo.render(false);
+  todo.focus();
+};

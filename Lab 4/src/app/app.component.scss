@@ -1,0 +1,24 @@
+.nav {
+  padding: 15px 10%;
+  background-color: #ddd;
+  display: flex;
+
+  a {
+    display: block;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: grey;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+
+    & + a {
+      margin-left: 15px;
+    }
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}

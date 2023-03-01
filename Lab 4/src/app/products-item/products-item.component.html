@@ -1,0 +1,23 @@
+<div class="products__item-wrap">
+  <div class="products__item-gallery">
+    <div class="products__item-gallery-main" [style.backgroundImage]="'url('+product.images[mainImg]+')'"></div>
+    <div class="products__item-gallery-thumbs">
+      <img *ngFor="let img of product.images; let i = index" [class]="i === mainImg ? 'active' : ''"  [src]="img" alt="" (click)="mainImg = i">
+    </div>
+  </div>
+  <div class="products__item-main">
+    <div class="products__item-name">{{ product.name }}</div>
+    <app-rating [rating]="product.rating" />
+    <div class="products__item-description">
+      <p>{{ product.description }}</p>
+      <a [href]="product.url" target="_blank" class="btn products__item-link"
+        >Подробнее</a
+      >
+    </div>
+    <div class="products__item-share">
+      <h3>Поделиться: </h3>
+      <button type="button" (click)="shareHandler('telegram')"><img src="../../assets/telegram.svg" alt=""></button>
+      <button type="button" (click)="shareHandler('whatsapp')"><img src="../../assets/whatsapp.svg" alt=""></button>
+    </div>
+  </div>
+</div>

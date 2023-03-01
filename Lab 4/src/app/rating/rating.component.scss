@@ -1,0 +1,16 @@
+.products__item-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &-star {
+    &-value {
+      fill: gold;
+    }
+  }
+
+  &-value {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}
