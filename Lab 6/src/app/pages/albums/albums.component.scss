@@ -1,0 +1,45 @@
+.albums-list {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+  row-gap: 15px;
+  color: white;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(white, $alpha: 0.3);
+    text-transform: capitalize;
+
+    a {
+      display: block;
+    }
+
+    span {
+      color: var(--yellow);
+    }
+
+    &-btns {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .button {
+        padding: 10px;
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+
+        path {
+            fill: var(--yellow);
+        }
+      }
+    }
+  }
+}

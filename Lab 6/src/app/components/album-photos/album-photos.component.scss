@@ -1,0 +1,25 @@
+:host {
+  position: relative;
+}
+
+.album-photos {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 20px;
+
+  &__item {
+    width: 150px;
+
+    p {
+      width: 100%;
+      color: white;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

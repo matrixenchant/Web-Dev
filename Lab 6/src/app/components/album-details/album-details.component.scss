@@ -1,0 +1,22 @@
+:host {
+  position: relative;
+}
+
+.button-photos {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.album-details-input {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}

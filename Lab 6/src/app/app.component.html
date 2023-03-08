@@ -1,0 +1,23 @@
+<div class="wrapper" [ngClass]="{'loading': isLoading() | async}">
+  <ngx-cursor
+    [selectors]="['click']"
+    [words]="['']"
+    size="40px"
+  >
+  </ngx-cursor>
+  <nav class="nav">
+    <a [routerLink]="['/home']" [routerLinkActive]="'active'" class="nav__item"
+      >home</a
+    >
+    <a
+      [routerLink]="['/albums']"
+      [routerLinkActive]="'active'"
+      class="nav__item"
+      >albums</a
+    >
+    <a [routerLink]="['/about']" [routerLinkActive]="'active'" class="nav__item"
+      >about</a
+    >
+  </nav>
+  <router-outlet></router-outlet>
+</div>
